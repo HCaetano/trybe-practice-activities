@@ -4,53 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Havyner Caetano's personal page</title>
-    <style>
-        h1 {
-            font-family: Helvetica, Arial, sans-serif;
-        }
-
-        body {
-            font-family: Tahoma, Verdana, sans-serif;
-            background-color: #5390d9;
-            color: white;
-        }
-
-        a {
-            text-decoration: none;
-            color: #083D77;
-        }
-
-        ul {
-            font-size: 20px;
-        }
-
-        img {
-            border-radius: 50%;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
     <h1>Havyner Caetano</h1>
-    <hr>
-    <h3>Index of contents</h3>
-    <ul>
-        <li><a href="#picture">Picture</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#blog">Blog recomendation</a></li>
-    </ul>
-    <img id="picture" src="https://avatars2.githubusercontent.com/u/20730250?s=460&u=03d21c5ef1f19f553d11b80a699a26c93b553e05&v=4" alt="Havyner Caetano's photo" height="300px">
-    <p><em>Loves</em> coding, movies, tv shows and gaming.<br><br>
-    Is learning the JavaScript stack at Trybe.<br><br>
-    Lives in Rio Grande, southern Brazil.</p>
-    <h3 id="skills">My skills</h3>
-    <hr>
-    <ul>
-        <li>Swims <em>badly</em></li>
-        <li>Plays Magic: The Gathering</li>
-        <li><strong>Always heals/ressurects the party</strong></li>
-    </ul>
-    <hr>
-    <h3>Blog recomendation</h3>
-    <a id="blog" target="_blank" href="https://magic.wizards.com/en/articles/columns/making-magic">Here is a link to the best Magic: The Gathering blog.</a>
+    <div class="content-index">
+        <h3>Page contents</h3>
+        <ul>
+            <li><a href="#picture">Picture</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#blog">Blog recomendation</a></li>
+        </ul>
+    </div>
+    <div>
+        <img id="picture" src="https://avatars2.githubusercontent.com/u/20730250?s=460&u=03d21c5ef1f19f553d11b80a699a26c93b553e05&v=4" alt="Havyner Caetano's photo" height="300px">
+    </div>
+    <div class="about-me-wrapper box-shadow">
+        <h3>A little about me</h3>
+        <p>
+            <em>Loves</em> coding, movies, tv shows and gaming.<br><br>
+            Is learning the JavaScript stack at Trybe.<br><br>
+            Lives in Rio Grande, southern Brazil.
+        </p>
+    </div>
+    <div class="skills-wrapper box-shadow">
+        <h3 id="skills">My skills</h3>
+        <ul>
+            <li>Swims <em>badly</em></li>
+            <li>Plays Magic: The Gathering</li>
+            <li><strong>Always heals/ressurects the party</strong></li>
+        </ul>
+    </div>
+    <div class="blog-wrapper box-shadow">
+        <h3>Blog recomendation</h3>
+        <a id="blog" target="_blank" href="https://magic.wizards.com/en/articles/columns/making-magic">Here is a link to the best Magic: The Gathering blog.</a>
+    </div>
 </body>
 </html>
