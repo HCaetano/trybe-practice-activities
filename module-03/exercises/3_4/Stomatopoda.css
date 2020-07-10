@@ -1,0 +1,11 @@
+img {
+    height: 300px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
