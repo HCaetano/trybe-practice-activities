@@ -1,4 +1,3 @@
-let chessPieces = ['pawn', 'rook', 'bishop', 'knight', 'king', 'queen'];
 let piece = 'eeBisHOP';
 let isValid = false;
 
