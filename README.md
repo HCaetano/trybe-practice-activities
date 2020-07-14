@@ -12,4 +12,8 @@
   
 ### Module 3 - Intro to HTML and CSS
 
+  Learned the basics of HTML and CSS. Initially, used non-semantic HTML, but later on in the module learned and adopted semantic HTML to the best of my knowledge at the time. Used ```float```, ```position```, ```color```, ```font```, ```border```, ```margin```, ```padding``` and most basic items.
+
+### Module 4 - Intro to JavaScript
+
   Ongoing.
