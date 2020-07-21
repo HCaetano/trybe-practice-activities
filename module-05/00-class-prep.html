@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .paragraph {
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="page-title">Title</h2>
+    <p class="paragraph" id="paragraph">Give this paragraph some color!</p>
+    <h4 id="subtitle">Subtitle</h4>
+    <p class="paragraph" id="second-paragraph">Second paragraph</p>
+
+    <script>
+      let paragraph = document.getElementById('paragraph');
+      paragraph.style.color = 'red';
+
+      let title = document.getElementById('page-title');
+      title.innerHTML = 'Lost in Translation';
+
+      let secondParagraph = document.getElementById('second-paragraph');
+      secondParagraph.innerHTML = 'Such a great film, tho';
+
+      let subTitle = document.getElementsByTagName('h4');
+      subTitle[0].style.background = 'red';
+
+      let paragraphs = document.getElementsByClassName('paragraph');
+      paragraphs[0].style.background = 'orange';
+    </script>
+  </body>
+</html>
