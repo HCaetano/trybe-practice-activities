@@ -16,4 +16,8 @@
 
 ### Module 4 - Intro to JavaScript
 
+  Learned the basics of JavaScript syntax: variables, control flow, loops. Also learned about functions and objects. Practice some programming logic with algorithms using JS syntax.
+
+### Module 5 - Intro to JavaScript: Part 2
+
   Ongoing.
