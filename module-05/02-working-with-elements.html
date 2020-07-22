@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+        Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+</body>
+  <script>
+    // Part 1
+    // 1
+    let initialElement = document.querySelector('#elementoOndeVoceEsta');
+
+    // 2
+    initialElement.parentElement.style.color = 'rgb(77,166,255)';
+
+    // 3
+    initialElement.children[0].innerHTML = 'Atlanta is cool';
+
+    // 4
+    let firstChild = document.querySelector('#pai').children[0];
+
+    // 5
+    firstChild = document.querySelector('#elementoOndeVoceEsta').previousElementSibling;
+
+    // 6
+    let attention = initialElement.nextSibling;
+
+    // 7
+    let thirdChild = initialElement.nextElementSibling;
+
+    // 8
+    let thirdChildFromParent = document.querySelector('#pai').children[2];
+
+    // Part 2
+    // 1
+    let newDiv = document.createElement('div');
+    let parent = document.querySelector('#pai');
+    parent.appendChild(newDiv);
+
+    // 2
+    let initialElementChild = document.createElement('div');
+    initialElement.appendChild(initialElementChild);
+
+    // 3
+    let childOfFirstChild = document.createElement('div');
+    firstChild.appendChild(childOfFirstChild);
+
+    // 4
+    childOfFirstChild.parentElement.nextElementSibling.nextElementSibling;
+
+    // Part 3
+    // 1
+    parent.removeChild(firstChild);
+
+    let secondChildOfInitial = document.querySelector('#elementoOndeVoceEsta').children[1];
+    let thirdChildOfInitial = document.querySelector('#elementoOndeVoceEsta').children[2];
+    initialElement.removeChild(secondChildOfInitial);
+    initialElement.removeChild(thirdChildOfInitial);
+
+    parent.removeChild(attention);
+    parent.removeChild(thirdChild);
+    let fourthChild = document.querySelector('#quartoEUltimoFilho');
+    let fifthChild = fourthChild.nextElementSibling;
+    parent.removeChild(fourthChild);
+    parent.removeChild(fifthChild);
+  </script>
+</html>
