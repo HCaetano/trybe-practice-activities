@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title></title>
+ </head>
+ <body>
+ 
+ <h1>Mad Libs</h1>
+ 
+ <ul>
+  <li>Noun: <input type="text" id="noun">
+  <li>Adjective: <input type="text" id="adjective">
+  <li>Someone's Name: <input type="text" id="person">
+ </ul>
+ 
+ <button id="lib-button">Lib it!</button>
+  
+ <div id="story"></div>
+  
+ <script>
+    function makeMadLib() {
+      const inputs = document.getElementsByTagName('input');
+      let story = 'Once upon a time ';
+      const storyPoints = [];
+      
+      for (let i = 0; i < inputs.length; i++) {
+        storyPoints.push(`${inputs[i].value}`);
+      }
+
+      story += `${storyPoints[2]} is terrified of ${storyPoints[1]} ${storyPoints[0]}`;
+      document.querySelector('#story').innerText = story;
+    }
+
+    const button = document.querySelector('#lib-button');
+    button.addEventListener('click', function () {
+      makeMadLib()
+    });
+ </script>
+ </body>
+</html>
