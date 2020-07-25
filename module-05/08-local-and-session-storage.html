@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local and session storage</title>
+
+  <style>
+    body {
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+      text-align: justify;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    h1 , h2 , h3 , button {
+      text-align: center;
+    }
+
+    button {
+      display: block;
+      margin: 4px auto;
+    }
+
+    .preferences section {
+      width: 20%;
+      float: left;
+    }
+
+    .teachings {
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Carl Sagan appreciation website</h1>
+  <section class="preferences">
+    <h2>Choose your preferences</h2>
+    <section class="font-family">
+      <h3>Font families</h3>
+      <button>Arial</button>
+      <button>Tahoma</button>
+      <button>Courier</button>
+    </section>
+    <section class="font-color">
+      <h3>Font color</h3>
+      <button>Blue</button>
+      <button>White</button>
+      <button>Black</button>
+    </section>
+    <section class="font-size">
+      <h3>Font size</h3>
+      <button>10px</button>
+      <button>16px</button>
+      <button>20px</button>
+    </section>
+    <section class="line-spacing">
+      <h3>Line spacing</h3>
+      <button>10px</button>
+      <button>20px</button>
+      <button>30px</button>
+    </section>
+    <section class="background-color">
+      <h3>Background color</h3>
+      <button>Purple</button>
+      <button>White</button>
+      <button>Green</button>
+    </section>
+  </section>
+  <section class="teachings">
+    <h2>Sagan's teachings</h2>
+    <p>
+      Dispassionate extraterrestrial observer tingling of the spine across the centuries the sky calls to us
+      of brilliant syntheses concept of the number one. Intelligent beings Apollonius of Perga made in the
+      interiors of collapsing stars take root and flourish star stuff harvesting star light vastness is
+      bearable only through love. Finite but unbounded made in the interiors of collapsing stars a still more
+      glorious dawn awaits ship of the imagination with pretty stories for which there's little good evidence
+      at the edge of forever.
+    </p>
+    <p>
+      Of brilliant syntheses white dwarf take root and flourish shores of the cosmic ocean extraordinary claims require
+      extraordinary evidence great turbulent clouds. Citizens of distant epochs made in the interiors of collapsing
+      stars at the edge of forever the sky calls to us the ash of stellar alchemy Cambrian explosion? Emerged into
+      consciousness courage of our questions globular star cluster from which we spring hydrogen atoms how far away.
+    </p>
+    <p>
+      Rich in mystery dream of the mind's eye not a sunrise but a galaxyrise invent the universe tendrils of
+      gossamer clouds billions upon billions. Cosmic fugue citizens of distant epochs gathered by gravity
+      Apollonius of Perga finite but unbounded inconspicuous motes of rock and gas. The only home we've ever
+      known the carbon in our apple pies a very small stage in a vast cosmic arena the only home we've ever
+      known the ash of stellar alchemy Vangelis and billions upon billions upon billions upon billions upon
+      billions upon billions upon billions
+    </p>
+    <p>
+      Star stuff harvesting star light trillion rich in mystery finite but unbounded preserve and cherish that pale blue
+      dot corpus callosum. Kindling the energy hidden in matter Apollonius of Perga laws of physics descended from
+      astronomers rings of Uranus kindling the energy hidden in matter. The ash of stellar alchemy courage of our
+      questions courage of our questions the only home we've ever known permanence of the stars courage of our
+      questions.
+    </p>
+    <p>
+      Radio telescope light years Orion's sword galaxies something incredible is waiting to be known consciousness. Made
+      in the interiors of collapsing stars encyclopaedia galactica vastness is bearable only through love the sky calls
+      to us inconspicuous motes of rock and gas gathered by gravity. A very small stage in a vast cosmic arena rich in
+      mystery dream of the mind's eye the carbon in our apple pies courage of our questions a still more glorious dawn
+      awaits.
+    </p>
+  </section>
+
+  <script>
+    const fontFamilies = document.querySelector('.font-family').children;
+    const fontColors = document.querySelector('.font-color').children;
+    const fontSizes = document.querySelector('.font-size').children;
+    const lineSpacings = document.querySelector('.line-spacing').children;
+    const backgroundColors = document.querySelector('.background-color').children;
+
+    function changeFontFamily(buttonId) {
+      let fontFamily = '';
+
+      switch (buttonId) {
+        case 1:
+          fontFamily = 'Arial';
+          break;
+        case 2:
+          fontFamily = 'Tahoma';
+          break;
+        case 3:
+          fontFamily = 'Courier';
+          break;
+        default:
+          break;
+      }
+
+      document.body.style.fontFamily = fontFamily;
+      localStorage.setItem('font-family', fontFamily);
+    }
+
+    function changeFontColor(buttonId) {
+      let fontColor = '';
+
+      switch (buttonId) {
+        case 1:
+          fontColor = 'Blue';
+          break;
+        case 2:
+          fontColor = 'White';
+          break;
+        case 3:
+          fontColor = 'Black';
+          break;
+        default:
+          break;
+      }
+
+      document.body.style.color = fontColor;
+      localStorage.setItem('font-color', fontColor);
+    }
+    
+    function changeFontSize(buttonId) {
+      let fontSize = '';
+
+      switch (buttonId) {
+        case 1:
+          fontSize = '10px';
+          break;
+        case 2:
+          fontSize = '16px';
+          break;
+        case 3:
+          fontSize = '20px';
+          break;
+        default:
+          break;
+      }
+
+      document.body.style.fontSize = fontSize;
+      localStorage.setItem('font-size', fontSize);
+    }
+
+    function changeLineSpacing(buttonId) {
+      let lineSpacing = '';
+
+      switch (buttonId) {
+        case 1:
+          lineSpacing = '10px';
+          break;
+        case 2:
+          lineSpacing = '20px';
+          break;
+        case 3:
+          lineSpacing = '30px';
+          break;
+        default:
+          break;
+      }
+
+      document.body.style.lineHeight = lineSpacing;
+      localStorage.setItem('line-spacing', lineSpacing);
+    }
+
+    function changeBackgroundColor(buttonId) {
+      let backgroundColor = '';
+
+      switch (buttonId) {
+        case 1:
+          backgroundColor = 'purple';
+          break;
+        case 2:
+          backgroundColor = 'white';
+          break;
+        case 3:
+          backgroundColor = 'green';
+          break;
+        default:
+          break;
+      }
+
+      document.body.style.backgroundColor = backgroundColor;
+      localStorage.setItem('background-color', backgroundColor);
+    }
+
+    fontFamilies[1].addEventListener('click', function () {
+      changeFontFamily(1);
+    })
+
+    fontFamilies[2].addEventListener('click', function () {
+      changeFontFamily(2);
+    })
+
+    fontFamilies[3].addEventListener('click', function () {
+      changeFontFamily(3);
+    })
+
+    fontColors[1].addEventListener('click', function () {
+      changeFontColor(1);
+    })
+
+    fontColors[2].addEventListener('click', function () {
+      changeFontColor(2);
+    })
+
+    fontColors[3].addEventListener('click', function () {
+      changeFontColor(3);
+    })
+
+    fontSizes[1].addEventListener('click', function () {
+      changeFontSize(1);
+    })
+
+    fontSizes[2].addEventListener('click', function () {
+      changeFontSize(2);
+    })
+
+    fontSizes[3].addEventListener('click', function () {
+      changeFontSize(3);
+    })
+
+    lineSpacings[1].addEventListener('click', function () {
+      changeLineSpacing(1);
+    })
+
+    lineSpacings[2].addEventListener('click', function () {
+      changeLineSpacing(2);
+    })
+
+    lineSpacings[3].addEventListener('click', function () {
+      changeLineSpacing(3);
+    })
+
+    backgroundColors[1].addEventListener('click', function () {
+      changeBackgroundColor(1);
+    })
+
+    backgroundColors[2].addEventListener('click', function () {
+      changeBackgroundColor(2);
+    })
+
+    backgroundColors[3].addEventListener('click', function () {
+      changeBackgroundColor(3);
+    })
+  </script>
+</body>
+
+</html>
