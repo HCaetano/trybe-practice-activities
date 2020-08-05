@@ -3,7 +3,7 @@ const resetButton = document.querySelector('#reset-button');
 const startDate = document.querySelector('#start-date');
 const body = document.querySelector('body');
 const select = document.querySelector('#state');
-let state;
+let state = 'Rio Grande do Sul';
 let residency;
 
 function errorMessage() {
@@ -50,10 +50,24 @@ sendButton.addEventListener('click', function (event) {
 
   div.innerText = content;
   body.appendChild(div);
-}
-)
+});
 
 resetButton.addEventListener('click', function () {
   document.querySelector('form').reset();
   body.lastChild.innerText = '';
-})
+});
+
+new JustValidate('.cv-form', {
+  rules: {
+    email: {
+      required: true,
+      email: true
+    },
+    messages: {
+      email: {
+        required: 'You must type in an email',
+        email: 'Typed email is invalid'
+      }
+    }
+  }
+});

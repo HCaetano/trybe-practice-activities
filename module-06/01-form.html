@@ -22,7 +22,7 @@
       </div>
     </div>
   </section>
-  <form action="">
+  <form action="" class="cv-form">
     <div class="field">
       <label for="name">Name</label>
       <div class="control">
@@ -31,7 +31,7 @@
       <div class="field">
         <label for="email">Email</label>
         <div class="control">
-          <input class="input" type="text" name="email" id="email" maxlength="50" required>
+          <input class="input" type="text" name="email" id="email" maxlength="50" data-validate-field="email" required>
         </div>
       </div>
     </div>
@@ -104,12 +104,12 @@
 
   <script>
     const picker = new Pikaday(
-      { 
-        field: document.getElementById('start-date'), 
-        format: 'DD/MM/YYYY',
+      {
+        field: document.getElementById('start-date'),
+        format: 'DD/MM/YYYY'
       }
-      );
+    );
   </script>
-</body>
+  <script src="js/just-validate.min.js"></script>
 
 </html>
