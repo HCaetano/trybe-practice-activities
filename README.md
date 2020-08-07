@@ -1,6 +1,6 @@
 # trybe-practice-activities
 
-## All the code created for the course's daily activities is available here
+## Trybe is an education institution that offers a 1500+ hours full-stack web development course. All the code created for the course's daily activities is available here
 
 ### Module 1 - Command line and Shell script
 
