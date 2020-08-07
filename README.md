@@ -16,8 +16,12 @@
 
 ### Module 4 - Intro to <img src="https://logos-download.com/wp-content/uploads/2019/01/JavaScript_Logo.png" alt="javascript" width="20" height="20"/>
 
-  Learned the basics of JavaScript syntax: variables, control flow, loops. Also learned about functions and objects. Practice some programming logic with algorithms using JS syntax.
+  Learned the basics of JavaScript syntax: variables, control flow, loops. Also learned about functions and objects. Practiced some programming logic doing algorithms using JS syntax.
 
 ### Module 5 - Intro to <img src="https://logos-download.com/wp-content/uploads/2019/01/JavaScript_Logo.png" alt="javascript" width="20" height="20"/>: Part 2
+
+  Learned about DOM, some of its selectors (```getElementById```, ```getElementsbyClassName``` and ```TagName```, ```querySelector```, ```querySelectorAll```), and how to manipulate DOM elements. Also learned about JavaScript events and web storage.
+
+### Module 6 - Intro to front-end development
 
   Ongoing.
