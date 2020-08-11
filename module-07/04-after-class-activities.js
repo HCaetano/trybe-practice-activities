@@ -21,7 +21,7 @@ const lesson3 = {
 // 1
 const addShiftToLesson = (lesson, propName, propValue) => {
   lesson[propName] = propValue;
-}
+};
 
 addShiftToLesson(lesson2, 'shift', 'Morning')
 // console.log(lesson2);
@@ -32,3 +32,10 @@ const listObjectKeys = (object) => {
 }
 
 // console.log(listObjectKeys(lesson2));
+
+// 3
+const objectSize = (object) => { 
+  return Object.keys(object).length;
+};
+
+// console.log(objectSize(lesson2));
