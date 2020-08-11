@@ -39,3 +39,10 @@ const objectSize = (object) => {
 };
 
 // console.log(objectSize(lesson2));
+
+// 4
+const listObjectValues = (object) => {
+  return Object.values(object);
+}
+
+// console.log(listObjectValues(lesson2));
