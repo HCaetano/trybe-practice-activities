@@ -51,3 +51,16 @@ const listObjectValues = (object) => {
 const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
 
 // console.log(allLessons);
+
+// 6
+const showStudentQuantity = (object) => {
+  let numberOfStudents = 0;
+
+  for (const lesson in allLessons) {
+    numberOfStudents += allLessons[lesson].numberOfStudents;
+  }
+
+  return numberOfStudents;
+}
+
+// console.log(showStudentQuantity(allLessons));
