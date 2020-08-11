@@ -64,3 +64,10 @@ const showStudentQuantity = (object) => {
 }
 
 // console.log(showStudentQuantity(allLessons));
+
+// 7
+const getValueByNumber = (object, position) => {
+  return Object.values(object)[position];
+}
+
+console.log(getValueByNumber(lesson1, 0));
