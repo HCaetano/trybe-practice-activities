@@ -22,6 +22,10 @@
 
   Learned about DOM, some of its selectors (```getElementById```, ```getElementsbyClassName``` and ```TagName```, ```querySelector```, ```querySelectorAll```), and how to manipulate DOM elements. Also learned about JavaScript events and web storage.
 
-### Module 6 - Intro to front-end development
+### Module 6 - Forms, CSS flexbox, libs and frameworks
+
+  Learned how to create and validate a HTML ```form```. In order to validate it, we used the <a href="https://github.com/Pikaday/Pikaday">Pikaday</a> and <a href="https://github.com/horprogs/Just-validate">Just-Validate</a> libs. To improve the aesthetics of it, I chose to use <a href="https://bulma.io">Bulma</a>. Also, we learned how to use flexbox and the mobile first strategy.
+    
+### Module 7 - ES6
 
   Ongoing.
