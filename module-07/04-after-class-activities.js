@@ -25,3 +25,10 @@ const addShiftToLesson = (lesson, propName, propValue) => {
 
 addShiftToLesson(lesson2, 'shift', 'Morning')
 // console.log(lesson2);
+
+// 2
+const listObjectKeys = (object) => {
+  return Object.keys(object);
+}
+
+// console.log(listObjectKeys(lesson2));
