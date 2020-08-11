@@ -28,8 +28,6 @@ const longestWord = (sentence) => {
 // console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
 
 // 4
-const skills = ['HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'];
-
 const replaceLetterWithWord = (word) => {
   const sentence = 'We need some x around here';
   const splitSentence = sentence.split('x');
@@ -38,3 +36,14 @@ const replaceLetterWithWord = (word) => {
 }
 
 // console.log(replaceLetterWithWord('doctor'));
+
+// 5
+const skills = ['HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'];
+
+const createConcatenatedString = (sentenceWhereLetterIsReplaced) => {
+  skills.sort();
+
+  return `${skills.toString()}, ${sentenceWhereLetterIsReplaced}`;
+}
+
+// console.log(createConcatenatedString(replaceLetterWithWord('doctor')));
