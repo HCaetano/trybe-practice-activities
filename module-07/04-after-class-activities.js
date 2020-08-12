@@ -61,13 +61,30 @@ const showStudentQuantity = (object) => {
   }
 
   return numberOfStudents;
-}
+};
 
 // console.log(showStudentQuantity(allLessons));
 
 // 7
 const getValueByNumber = (object, position) => {
   return Object.values(object)[position];
-}
+};
 
-console.log(getValueByNumber(lesson1, 0));
+// console.log(getValueByNumber(lesson1, 0));
+
+// 8
+const verifyPair = (object, key, value) => {
+  const entries = Object.entries(object);
+  let isTrue = false;
+
+  for (const i in entries) {
+    if (entries[i][0] === key && entries[i][1] === value) {
+      isTrue = true;
+    }
+  }
+
+  return isTrue;
+};
+
+// console.log(verifyPair(lesson3, 'shift', 'evening'));
+// console.log(verifyPair(lesson3, 'subject', 'Maria Clara'));
