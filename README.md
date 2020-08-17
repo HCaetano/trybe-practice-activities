@@ -26,6 +26,10 @@
 
   Learned how to create and validate a HTML ```form```. In order to validate it, we used the <a href="https://github.com/Pikaday/Pikaday">Pikaday</a> and <a href="https://github.com/horprogs/Just-validate">Just-Validate</a> libs. To improve the aesthetics of it, I chose to use <a href="https://bulma.io">Bulma</a>. Also, we learned how to use flexbox and the mobile first strategy.
     
-### Module 7 - ES6
+### Module 7 - ES6: Part 1
 
-  Ongoing.
+  Learned in more depth about ~~var,~~ ```let``` and ```const```, as well as arrow functions, template literals and objects. Also learned about the Node.js Assert module and the basics of unit testing.
+  
+### Module 8 - ES6: Part 2
+
+Ongoing.
