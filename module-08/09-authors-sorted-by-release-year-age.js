@@ -103,4 +103,4 @@ function nameAndAge() {
   return processedData;
 }
 
-assert.deepEqual(nameAndAge(), expected_result);
+assert.deepStrictEqual(nameAndAge(), expected_result);
