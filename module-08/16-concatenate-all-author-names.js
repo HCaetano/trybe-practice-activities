@@ -67,8 +67,8 @@ const books = [
 
 function allNames() {
   const allAuthorsNames = books
-  .map(book => book.author.name)
-  .reduce((accumulator, current) => `${accumulator}, ${current}`);
+    .map(book => book.author.name)
+    .reduce((accumulator, current) => `${accumulator}, ${current}`);
   
   return formattedNames = `Nomes: ${allAuthorsNames}.`; 
 }
