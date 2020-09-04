@@ -1,4 +1,4 @@
-const sum = require('./sum');
+const sum = require('./01-sum');
 
 describe('sum', () => {
   it('should return 9', () => {

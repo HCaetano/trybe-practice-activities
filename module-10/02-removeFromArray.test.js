@@ -1,4 +1,4 @@
-const removeFromArray = require('./removeFromArray');
+const removeFromArray = require('./02-removeFromArray');
 
 describe('removeFromArray', () => {
   it('should return array short of the removed element', () => {
