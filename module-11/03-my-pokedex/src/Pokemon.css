@@ -1,0 +1,23 @@
+.pokemon {
+  border: 1px solid black;
+  width: 40%;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.pokemon > div {
+  width: 30%;
+}
+
+p {
+  text-align: center;
+}
+
+.pokemon-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
