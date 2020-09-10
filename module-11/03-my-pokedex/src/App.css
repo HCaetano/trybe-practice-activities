@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .pokemon {
+    width: 90%;
+  }
+}
