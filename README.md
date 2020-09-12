@@ -32,4 +32,20 @@
   
 ### Module 8 - ES6: Part 2
 
+  Learned about higher-order functions and some other remaining relevant topics from ES6, like spread and rest operators and destructuring assignment. The HOF we learned and practiced with are ```forEach```, ```find```, ```some```, ```every```, ```sort```, ```map```, ```filter``` and ```reduce```.
+
+### Module 9 - Async, promises and callbacks
+
+  Learned what are asynchronous operations and in what form they usually show up in our systems. Also learned how to deal with async operations using promises. Finally, formalized a concept we we've been using for some time already: callbacks.
+
+### Module 10 - Jest
+
+  Learned how to test our applications with a more sophisticated technology: Jest. We were presented to and practiced with ```describe```, ```it```, ```mock``` and ```spy```.
+
+### Module 11 - Intro to <img src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_logotype_emblem.png" alt="react" width="20" height="20"/>
+  
+  Learned about what React is and how it works. Made a simple "Hello, world!", created some components, used ```props``` and ```propTypes```. Created a simpler version of a IMDB-like page.
+
+### Module 12
+
 Ongoing.
