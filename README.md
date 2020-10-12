@@ -46,6 +46,22 @@
   
   Learned about what React is and how it works. Made a simple "Hello, world!", created some components, used ```props``` and ```propTypes```. Created a simpler version of a IMDB-like page.
 
-### Module 12
+### Module 12 - Stateful components, events and forms
+
+  Learned about class components with state, how to handle events and forms in React.
+
+### Module 13 - Lifecycles and routing
+
+  Learned about React's lifecycles, with focus on componentDidMount, which we used frequently to execute API requests. Besides that, we learned how to work with routes in React, using BrowserRouter to make both static and dynamic routes.
+
+### Module 14 - Agile methodologies and workflow
+
+  Learned what 'agile' means in teamwork and about the most famous methodologies. Learned and used Scrum and Kanban to manage the team's work on a four people project. Also learned more about best practices when working with and GitHub, especially about how to write good commit messages using [Angular's guide](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md "Link to Angular's contributing guide"). While that is a great guide, I'm using [this](https://chris.beams.io/posts/git-commit/ "Chris Beam's How to Write a Git Commit Message") guide to write the commit messages of this repository.
+
+### Module 15 - React testing library
+
+  Learned about behaviour testing in React, using RTL. We learned how to test pages looking for specific elements and their content, as well events triggered by them. Besides that, we learned how to test routes.
+
+### Module 16 - State management with <img src="https://img.icons8.com/color/100/000000/redux.png" alt="redux" width="20" height="20"/>
 
 Ongoing.
