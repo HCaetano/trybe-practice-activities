@@ -1,3 +1,13 @@
+body {
+  margin: auto;
+  max-width: 800px;
+  width: 100%;
+}
+
 .error {
   border: 2px solid red;
+}
+
+body div {
+  margin-bottom: 20px;
 }
